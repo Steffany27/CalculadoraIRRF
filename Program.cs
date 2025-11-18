@@ -4,16 +4,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("Digite o salário bruto: ");
+        Console.Write("Nome do funcionário: ");
+        string nome = Console.ReadLine();
+
+        Console.Write("Salário bruto: ");
         double salarioBruto = double.Parse(Console.ReadLine());
 
-        FolhaPagamento folha = new FolhaPagamento(salarioBruto);
+        Funcionario f = new Funcionario(nome, salarioBruto);
 
-        double inss = folha.CalcularINSS();
-        double irrf = folha.CalcularIRRF();
+        double inss = f.CalcularINSS();
+        double irrf = f.CalcularIRRF();
 
-        Console.WriteLine($"
-Desconto INSS: {inss:F2}");
-        Console.WriteLine($"Desconto IRRF: {irrf:F2}");
+        Console.WriteLine($"\nINSS: R$ {inss:F2}");
+        Console.WriteLine($"IRRF: R$ {irrf:F2}");
     }
 }
