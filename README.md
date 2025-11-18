@@ -7,7 +7,7 @@ Este projeto calcula o **INSS**, o **salário base** e o **IRRF** para um salár
 ## Como rodar o projeto
 
 ### Opção 1: Rodar no navegador (sem instalar nada)
-- Use [https://dotnetfiddle.net/](https://dotnetfiddle.net/)  
+- Use (https://dotnetfiddle.net/z9BH2q)
 - Crie um novo projeto do tipo **Console**  
 - Copie e cole os códigos dos arquivos:
   - `INSS.cs`
